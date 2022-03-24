@@ -1,0 +1,6 @@
+__pycache__/
+venv/
+parsed_data/
+flats_info/
+images/
+catboost_info/
