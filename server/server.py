@@ -32,7 +32,3 @@ def predict(data: ApartmentDesc):
     df = pd.DataFrame.from_dict(data, orient='index').transpose()      
     price = np.expm1(model.predict(df))
     return {"price": price[0]}
-
-
-if __name__ == "__main__":
-    uvicorn.run("server:app", host="0.0.0.0")
